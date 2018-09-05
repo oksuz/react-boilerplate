@@ -1,0 +1,7 @@
+# React Hello World App
+
+- install dependencies with command `npm install`
+- start webpack bundler with command `npm start`
+
+your build appears in `dist` folder in project root.
+

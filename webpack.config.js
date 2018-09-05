@@ -1,4 +1,6 @@
 const path = require('path');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
     devtool: 'source-map',
@@ -21,5 +23,10 @@ module.exports = {
                 use: ["style-loader", "css-loader"],
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebPackPlugin({
+            template: './src/index.html',
+        }),
+    ],
 };
