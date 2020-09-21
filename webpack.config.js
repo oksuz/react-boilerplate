@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   devtool: "source-map",
-  entry: "./src/index.js",
+  entry: ["@babel/polyfill", "./src/index.js"],
   output: {
     path: path.join(__dirname, "/dist"),
     filename: "index_bundle.js"
@@ -26,7 +26,8 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
-    port: 9000
+    port: 9000,
+    open: true
   },
   plugins: [
     new HtmlWebPackPlugin({
