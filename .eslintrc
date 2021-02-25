@@ -1,0 +1,135 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "react": {
+      "version": "16.8.1"
+    }
+  },
+  "rules": {
+    "strict": [
+      "warn",
+      "never"
+    ],
+    "template-curly-spacing": [
+      "warn",
+      "never"
+    ],
+    "curly": [
+      "warn",
+      "all"
+    ],
+    // "indent" : ["warn", 4],
+    "brace-style": [
+      "warn",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "no-undef-init": "warn",
+    "linebreak-style": ["warn", "unix"],
+    "quotes": [
+      "warn",
+      "single"
+    ],
+    "semi": [
+      "warn",
+      "always"
+    ],
+    "no-multi-spaces": "warn",
+    "eqeqeq": [
+      "warn",
+      "allow-null"
+    ],
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "react/prop-types": [
+      "warn",
+      {
+        "skipUndeclared": true
+      }
+    ],
+    "eol-last": [
+      "warn",
+      "always"
+    ],
+    "no-unused-vars": "warn",
+    "radix": "warn",
+    "prefer-template": "warn",
+    "no-confusing-arrow": [
+      "warn"
+    ],
+    "arrow-body-style": [
+      "warn",
+      "always"
+    ],
+    "array-callback-return": [
+      "warn",
+      {
+        "allowImplicit": true
+      }
+    ],
+    "no-return-assign": [
+      "warn",
+      "except-parens"
+    ],
+    "class-methods-use-this": [
+      "warn",
+      {
+        "exceptMethods": [
+          "render",
+          "getInitialState",
+          "getDefaultProps",
+          "getChildContext",
+          "componentWillMount",
+          "componentDidMount",
+          "componentWillReceiveProps",
+          "shouldComponentUpdate",
+          "componentWillUpdate",
+          "componentDidUpdate",
+          "componentWillUnmount"
+        ]
+      }
+    ],
+    "no-trailing-spaces": "off",
+    "no-eq-null": "off",
+    "no-prototype-builtins": "off",
+    "key-spacing": [
+      "warn",
+      {
+        "beforeColon": false,
+        "afterColon": true
+      }
+    ],
+    "comma-dangle": [
+      "warn",
+      "never"
+    ]
+  }
+}

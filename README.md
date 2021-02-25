@@ -4,6 +4,20 @@
 - `start` development server with command `npm run start:dev`
 - `build` your app using `npm run build` command, your build appears in `dist` folder
 
+# Some useful commands
+
+`npm run codestyling:fix` fixes code styles automatically end show errors that not convenient for eslint rules
+
+`npm run eslint:check` checks the code according to eslint rules
+
+`npm run prettier:check` checks the code according to prettier rules
+
+Last two of the commands are useful for ci/cd tools. 
+
+# Test
+
+it uses jest for testing. run this command for run tests: `npm run test` 
+
 # Enabled Babel Plugins
 
 - @babel/plugin-proposal-class-properties
